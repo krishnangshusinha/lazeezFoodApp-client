@@ -62,7 +62,7 @@ const AuthProvider = ({children}) => {
 
           const userInfo = { email: currentUser.email };
 
-          axios.post("http://localhost:5000/jwt", userInfo).then((response) => {      // send the email of current user for token generation
+          axios.post("https://lazeezfoodapp-server.onrender.com/jwt", userInfo).then((response) => {      // send the email of current user for token generation
             
             if (response.data.token) {      // if token is generated
               localStorage.setItem("access-token", response.data.token);    // use local storage to store the token data

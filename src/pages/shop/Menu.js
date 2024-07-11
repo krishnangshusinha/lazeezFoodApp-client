@@ -18,7 +18,7 @@ const Menu = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/menu`);     // fetch data from backend
+        const response = await fetch(`https://lazeezfoodapp-server.onrender.com/menu`);     // fetch data from backend
         const data = await response.json();             // convert it in json format
         setMenu(data);
         setFilteredItems(data);

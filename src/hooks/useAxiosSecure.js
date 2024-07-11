@@ -7,7 +7,7 @@ import useAuth from "./useAuth";
 
 // creating axios instance of baseURL
 const axiosSecure = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://lazeezfoodapp-server.onrender.com",
 });
 
 // axios secure is for those that needs to be secure and private

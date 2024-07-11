@@ -15,7 +15,7 @@ const useCart = () => {
 
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/carts?email=${user?.email}`,
+        `https://lazeezfoodapp-server.onrender.com/carts?email=${user?.email}`,
         {
           headers: {
             authorization: `Bearer ${token}`,   // to ensure only indivisual with valid token can access the url 

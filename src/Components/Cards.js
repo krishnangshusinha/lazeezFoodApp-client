@@ -37,7 +37,7 @@ const Cards = ({item}) => {
       };
 
       axios
-        .post("http://localhost:5000/carts", cartItem)
+        .post("https://lazeezfoodapp-server.onrender.com/carts", cartItem)
         .then((response) => {
           console.log(response);
           if (response) {

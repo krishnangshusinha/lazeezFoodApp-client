@@ -95,7 +95,7 @@ const router = createBrowserRouter([
                 path: "update-menu/:id",
                 element: <UpdateMenu />,
                 loader: ({ params }) =>         // to fetch details of the parameter passed in the path URL
-                  fetch(`http://localhost:5000/menu/${params.id}`),
+                  fetch(`https://lazeezfoodapp-server.onrender.com/menu/${params.id}`),
               },
         ],
 

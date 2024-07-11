@@ -5,7 +5,7 @@ import axios from "axios";
 
 // creating axios instance of base URL
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://lazeezfoodapp-server.onrender.com",
 });
 
 // axios public is for those URL that can be accesed publically
